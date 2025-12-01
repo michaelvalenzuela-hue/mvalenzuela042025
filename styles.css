@@ -73,11 +73,19 @@ html {
   background-color: none;
   min-height: auto;
 }
-
+#aifooter {
+  background-color: seagreen;
+  padding: 1rem;
+  min-height: auto;
+}
 #subfooter {
   background-color: blue;
   min-height: 10rem;
   padding: 1rem;
+}
+#aifooter .container {
+  text-align: center;
+  min-height: auto;
 }
 
 audio {
