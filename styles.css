@@ -64,25 +64,40 @@ html {
   min-height: 10rem;
   padding: 1rem;
 }
+
 #pagefooter {
   background-color: yellowgreen;
   min-height: auto;
   padding: 1rem;
 }
+
 #pagefooter .container {
   background-color: none;
   min-height: auto;
 }
+
+#pageheader nav {
+  text-align: center;
+}
+
+#page header nav ul {
+  list-style-type: none;
+  margin: 0%;
+  padding: 0%;
+}
+
 #aifooter {
   background-color: seagreen;
   padding: 1rem;
   min-height: auto;
 }
+
 #subfooter {
   background-color: blue;
   min-height: 10rem;
   padding: 1rem;
 }
+
 #aifooter .container {
   text-align: center;
   min-height: auto;
@@ -93,4 +108,35 @@ audio {
   margin: auto;
   background-color: red;
   border: 5px solid red;
+}
+
+#page header nav ul li {
+  border: 2px solid silver;
+  padding: 1rem;
+  background-color: #befbfc;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+#page header nav ul li:hover {
+  background-color: red;
+}
+
+@media screen and (min-width: 600px) {
+  #pageheader nav ul {
+    background-color: none;
+    margin-top: 2rem;
+  }
+
+  #page header nav ul li {
+    display: inline-block;
+  }
+
+  #pagecontent {
+    background-color: blue;
+  }
+
+  #career {
+    background-color: red;
+  }
 }
