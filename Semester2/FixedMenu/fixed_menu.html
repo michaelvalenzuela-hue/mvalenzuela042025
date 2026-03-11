@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+
+    <style>
+      /* Mobile First CSS */
+      html {
+        /* Temporary - Delete */
+        height: 200%;
+      }
+      body {
+        font-family: cursive;
+        background-color: lightpink;
+        margin: 0%;
+      }
+
+      #pageheader {
+        background-color: yellow;
+        padding: 1rem;
+        /* Default */
+        position: static;
+      }
+
+      #logo {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        display: block;
+      }
+
+      #fblogoheader {
+        background-color: steelblue;
+      }
+
+      #pageheader h1 {
+        text-align: center;
+        color: white;
+        /* Remove */
+        background-color: purple;
+      }
+
+      #pageheader nav {
+        background-color: steelblue;
+        padding: 0.5rem;
+        border-radius: 10px;
+      }
+
+      #pageheader ul {
+        padding: 0.5rem;
+        list-style-type: none;
+        background-color: green;
+        /* FlexBox component */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      #pageheader li {
+        text-align: center;
+        border: 1px solid white;
+        padding: 0.5rem;
+        background-color: maroon;
+      }
+
+      #pageheader a {
+        color: white;
+        text-decoration: none;
+      }
+      /* None header elements */
+      main {
+        padding: 1rem;
+      }
+      p {
+        line-height: 1.5;
+        color: #333;
+      }
+
+      @media screen and (min-width: 650px) {
+        body {
+          background-color: red;
+        }
+        #pageheader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          /* FlexBox component */
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        #fblogoheader {
+          /* FlexBox component */
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+        }
+        #pageheader ul {
+          flex-direction: row;
+          justify-content: center;
+        }
+
+        #pageheader nav {
+          min-width: 400px;
+        }
+
+        #logo {
+          width: 80px;
+          height: 80px;
+        }
+        main {
+          padding-top: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="pageheader">
+      <!-- Start the logo and h1 -->
+      <div id="fblogoheader">
+        <img
+          src="Paws_logo/paws_logo.png"
+          alt="Paws and Whiskers Logo"
+          id="logo"
+        />
+        <h1>Paws and Whiskers</h1>
+      </div>
+      <!-- End the logo and h1 -->
+
+      <!-- Start navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Our Pets</a></li>
+          <li><a href="#">Testmonials</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- End navigation -->
+    </header>
+
+    <main>
+      <h2>Fixed Menu</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates
+        doloribus amet commodi ducimus vel facilis soluta culpa natus omnis, et
+        sequi eaque quia hic quam, veniam, odio laudantium dignissimos earum
+        dolor temporibus totam ipsam ut quasi? Autem error sunt, at magni
+        praesentium labore accusamus aspernatur, natus ad veniam eius saepe
+        alias. Neque, voluptatibus fugiat quis aperiam eaque aliquid perferendis
+        nihil necessitatibus assumenda veritatis deserunt architecto distinctio
+        in magni consequuntur quidem facere minima debitis quibusdam porro?
+        Beatae, facere perspiciatis vero quis illum accusamus repellendus rerum
+        odit reiciendis doloremque illo ratione fuga modi tempore dicta rem
+        commodi consequuntur, temporibus ab fugiat autem?
+      </p>
+    </main>
+  </body>
+</html>

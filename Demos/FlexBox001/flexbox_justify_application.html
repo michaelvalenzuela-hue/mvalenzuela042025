@@ -27,28 +27,33 @@
         padding: 1rem;
         margin-bottom: 1rem;
         border-radius: 5px;
-        background-color: light green;
       }
-    </style>
-
-    <style>
-      #buttons {
-        border: 2px solid silver;
+      ul#list {
+        background-color: red;
+        display: block;
+        list-style-type: none;
         padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      #fbbuttions {
         background-color: lightblue;
-        width: 75%;
-        margin: auto;
+        padding: 1rem;
         display: flex;
         justify-content: space-evenly;
       }
-
-      #lists {
-        background-color: yellow;
-        border: 1px solid silver;
+      #cards {
+        background-color: lightgreen;
+        padding: 1rem;
+        display: flex;
+      }
+      ul#google {
+        background-color: lightpink;
+        display: block;
         list-style-type: none;
+        padding: 1rem;
         display: flex;
         justify-content: space-around;
-        padding: 1rem;
       }
     </style>
   </head>
@@ -57,7 +62,6 @@
     <h1>Flexbox Justify Content Application</h1>
 
     <h2>Lists</h2>
-
     <ul id="list">
       <li>Inline</li>
       <li>Block</li>
@@ -66,8 +70,7 @@
     </ul>
 
     <h2>Buttons</h2>
-
-    <div id="buttons">
+    <div id="fbbuttions">
       <button type="button">Button 1</button>
       <button type="button">Button 2</button>
       <button type="button">Button 3</button>
@@ -76,32 +79,29 @@
     </div>
 
     <h2>Cards</h2>
+    <div id="cards">
+      <div class="card">
+        <h3>Card Title 1</h3>
+        <p>This is a description for card 1.</p>
+      </div>
 
-    <div class="card">
-      <h3>Card Title 1</h3>
-      <p>This is a description for card 1.</p>
-    </div>
+      <div class="card">
+        <h3>Card Title 2</h3>
+        <p>This is a description for card 1.</p>
+      </div>
 
-    <div class="card">
-      <h3>Card Title 2</h3>
-      <p>This is a description for card 1.</p>
-    </div>
-
-    <div class="card">
-      <h3>Card Title 3</h3>
-      <p>This is a description for card 1.</p>
+      <div class="card">
+        <h3>Card Title 3</h3>
+        <p>This is a description for card 1.</p>
+      </div>
     </div>
 
     <h2>Link Lists</h2>
-
-    <ul>
-      <li><a href="https://google.com/">Google</a>li&gt;</li>
-
-      <li><a href="https://google.com/">Google</a>li&gt;</li>
-
-      <li><a href="https://google.com/">Google</a>li&gt;</li>
-
-      <li><a href="https://google.com/">Google</a>li&gt;</li>
+    <ul id="google">
+      <li><a href="https://google.com">Google</a></li>
+      <li><a href="https://google.com">Google</a></li>
+      <li><a href="https://google.com">Google</a></li>
+      <li><a href="https://google.com">Google</a></li>
     </ul>
   </body>
 </html>
