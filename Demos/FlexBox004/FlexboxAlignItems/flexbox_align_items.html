@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Align Items</title>
+    <style>
+      h1/ h2 {
+        text-align: center;
+      }
+      #container001 {
+        border: 5px solid black;
+        background-color: lightpink;
+        margin: 1rem;
+      }
+      #container002 {
+        border: 5px solid black;
+        background-color: lightblue;
+        margin: 1rem;
+      }
+      #container003 {
+        border: 5px solid black;
+        background-color: magenta;
+        margin: 1rem;
+      }
+
+      .box {
+        border: 1px solid black;
+        background-color: lightgoldenrodyellow;
+        width: 25px;
+        height: 25px;
+        padding: 1rem;
+        font-size: 10px;
+      }
+
+      @media screen and (min-width: 800px) {
+        #container001 {
+          background-color: red;
+          min-height: 800px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <h2>Align Items</h2>
+
+    <ul>
+      <li>flex-end</li>
+      <li>center</li>
+      <li>flex-start</li>
+      <li>stretch</li>
+      <li>baseline</li>
+    </ul>
+
+    <h2>Container001</h2>
+    <div id="container001">
+      <div class="box">items001</div>
+      <div class="box">items002</div>
+      <div class="box">items003</div>
+      <div class="box">items004</div>
+      <div class="box">items005</div>
+      <div class="box">items006</div>
+      <div class="box">items007</div>
+      <div class="box">items008</div>
+      <div class="box">items009</div>
+      <div class="box">items010</div>
+    </div>
+    <div id="container002">
+      <div class="box">items001</div>
+      <div class="box">items002</div>
+      <div class="box">items003</div>
+      <div class="box">items004</div>
+      <div class="box">items005</div>
+      <div class="box">items006</div>
+      <div class="box">items007</div>
+      <div class="box">items008</div>
+      <div class="box">items009</div>
+      <div class="box">items010</div>
+    </div>
+    <div id="container003">
+      <div class="box">items001</div>
+      <div class="box">items002</div>
+      <div class="box">items003</div>
+      <div class="box">items004</div>
+      <div class="box">items005</div>
+      <div class="box">items006</div>
+      <div class="box">items007</div>
+      <div class="box">items008</div>
+      <div class="box">items009</div>
+      <div class="box">items010</div>
+    </div>
+  </body>
+</html>
